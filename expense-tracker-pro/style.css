@@ -1,0 +1,174 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:30px;
+    transition:.3s;
+}
+
+.container{
+    width:100%;
+    max-width:550px;
+    background:#fff;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+}
+
+h1,h2,h3{
+    text-align:center;
+}
+
+#themeBtn{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:#222;
+    color:white;
+    cursor:pointer;
+    margin:20px 0;
+    font-size:16px;
+}
+
+.balance-card{
+    background:linear-gradient(135deg,#22c55e,#16a34a);
+    color:white;
+    border-radius:15px;
+    padding:20px;
+    margin-bottom:20px;
+}
+
+.summary{
+    display:flex;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.income,
+.expense{
+    flex:1;
+    padding:18px;
+    border-radius:15px;
+    color:white;
+    text-align:center;
+}
+
+.income{
+    background:#22c55e;
+}
+
+.expense{
+    background:#ef4444;
+}form{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    margin-bottom:20px;
+}
+
+input,
+select,
+button{
+    padding:12px;
+    border-radius:10px;
+    border:1px solid #ddd;
+    font-size:16px;
+}
+
+input:focus,
+select:focus{
+    outline:none;
+    border-color:#22c55e;
+}
+
+form button{
+    background:#22c55e;
+    color:white;
+    border:none;
+    cursor:pointer;
+    transition:.3s;
+}
+
+form button:hover{
+    background:#16a34a;
+}
+
+#search{
+    margin-bottom:20px;
+}
+
+ul{
+    list-style:none;
+}
+
+li{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px;
+    margin-bottom:10px;
+    background:#f8f8f8;
+    border-left:5px solid #22c55e;
+    border-radius:10px;
+}
+
+.delete-btn{
+    background:#ef4444;
+    color:white;
+    border:none;
+    padding:8px 12px;
+    cursor:pointer;
+    border-radius:8px;
+}
+
+.delete-btn:hover{
+    background:#dc2626;
+}
+
+canvas{
+    margin-top:20px;
+    background:white;
+    border-radius:15px;
+    padding:10px;
+}
+
+body.dark{
+    background:#121212;
+}
+
+body.dark .container{
+    background:#1f1f1f;
+    color:white;
+}
+
+body.dark input,
+body.dark select{
+    background:#2b2b2b;
+    color:white;
+    border:1px solid #555;
+}
+
+body.dark li{
+    background:#2d2d2d;
+    color:white;
+}
+
+body.dark canvas{
+    background:#2d2d2d;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3{
+    color:white;
+}
